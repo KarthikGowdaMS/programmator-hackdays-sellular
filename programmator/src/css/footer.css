@@ -1,3 +1,4 @@
+
 .contact-heading{
     text-align: center;
 }
@@ -26,6 +27,7 @@
 }
 
 #EmailBtn{
+    margin-top: 1rem;
     font-weight: bold;
     border-radius: 7%;
     border: none;

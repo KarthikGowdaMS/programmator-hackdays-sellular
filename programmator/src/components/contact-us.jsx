@@ -82,7 +82,7 @@ class Contact extends Component {
 					  <label for="message">Message</label>
 					  <input type="text" class="form-control" id="message"></input>
 					</div>
-					<input type="button" value="Send Mail" id="EmailBtn" onclick="sendMail()"></input>
+					<button onClick={sendMail} id="EmailBtn">Send Mail</button>
 				  </form>
 				</div>
 			  </div>
@@ -98,8 +98,15 @@ class Contact extends Component {
 
 
         <center><p>&copy; 2023 Hackathon Management System</p></center>
+
       </div>
     );
+    
   }
 }
 export default Contact;
+function sendMail(){
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  window.location.href = "mailto:navaneethjainsl@gmail.com?subject=" + subject + "&body=" + message;
+}

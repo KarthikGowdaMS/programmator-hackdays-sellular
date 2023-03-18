@@ -3,6 +3,7 @@ import Main from "./components/main";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Events from "./components/events";
 import Contact from "./components/contact-us";
+import Login from "./components/login";
 function App() {
     return (
 
@@ -11,13 +12,20 @@ function App() {
             <Navbar />
             <Routes>
                 <Route exact path='/' element={
-                    <Main />
+                    <>
+                        <Main />
+                        <Contact />
+                    </>
+
                 } />
                 <Route exact path='/events' element={
                     <Events />
                 } />
+                <Route exact path ='/register' element={
+                    <Login />
+                }/>
             </Routes>
-            <Contact />
+
         </Router >
 
     );
