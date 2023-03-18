@@ -21,8 +21,8 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-	margin-top: 1rem;
-	text-align: center;
+    margin: 1rem auto 0;
+
 }
 
 nav ul li a {
