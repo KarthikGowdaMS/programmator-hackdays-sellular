@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar";
 import Main from "./components/main";
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Events from "./components/events";
 import Contact from "./components/contact-us";
 function App() {
