@@ -1,0 +1,50 @@
+.contact-heading{
+    text-align: center;
+}
+
+.fa{
+    padding: 10px;
+}
+
+.address, .phone, .email{
+    padding: 15px 7px;
+}
+
+.pset{
+    padding-left: 45px;
+}
+
+.forms{
+    margin-top: 20px;
+    padding: 7% 5%;
+    background-color: #343A40;
+    color: #FFFFFFBF;
+}
+
+.forms h3{
+    text-align: center;
+}
+
+#EmailBtn{
+    font-weight: bold;
+    border-radius: 7%;
+    border: none;
+}
+
+#EmailBtn:hover{
+    color: #FFFFFFBF;
+    background-color: #343A40;
+}
+
+.social{
+    padding: 7% 15% 5%;
+    text-align: center;
+}
+
+.social a{
+    color: #FF2E63;
+}
+
+.social a:hover{
+    color: #08D9D6;
+}
