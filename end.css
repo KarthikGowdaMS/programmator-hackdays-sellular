@@ -1,15 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 header {
-    background-color: #70b3c4;
+    background-color: #243763;
     color: #fff;
     padding: 1rem;
 	text-align: center;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
+}
+
+h1{
+    font-size: 3.5rem;
+    line-height: 1.5;
+    /* color: #FFFFFFBF; */
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #343A40;
 }
 
 
@@ -61,8 +73,27 @@ nav ul li a {
     text-decoration: none;
 } 
 
-main {
+/* main {
     padding: 1rem;
+} */
+
+
+/* Home */
+#home{
+    background-color: #fff;
+    color: #243763;
+    padding: 80px 0;
+}
+
+.title-col{
+    text-align: center;
+}
+
+.title-image{
+    width: 100%;
+    position: relative;
+    right: 0px;
+    left: 50px;
 }
 
 .banner {
