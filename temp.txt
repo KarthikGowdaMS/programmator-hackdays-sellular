@@ -1,0 +1,91 @@
+<!-- <section class="banner">
+    <h2>Welcome to the Hackathon Management System</h2>
+    <p>Streamline the organization and execution of your hackathons with our user-friendly system.</p>
+    <a href="#">Learn More</a>
+</section> -->
+<!-- <section class="events">
+    <div class="h2"><h2>Upcoming Events</h2></div>
+    <div class="event-card">
+        <h3>Hackathon Name</h3>
+        <p>Date: MM/DD/YYYY</p>
+        <p>Location: City, State</p>
+        <a href="#">Register Now</a>
+    </div>
+    <div class="event-card">
+        <h3>Hackathon Name</h3>
+        <p>Date: MM/DD/YYYY</p>
+        <p>Location: City, State</p>
+        <a href="#">Register Now</a>
+    </div>
+    <div class="event-card">
+        <h3>Hackathon Name</h3>
+        <p>Date: MM/DD/YYYY</p>
+        <p>Location: City, State</p>
+        <a href="#">Register Now</a>
+    </div>
+</section> -->
+
+css:
+.banner {
+    background-color: #808ae4;
+    padding: 2rem;
+    text-align: center;
+	border-radius: 15px;
+}
+
+.banner h2 {
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    margin-bottom: 2rem;
+}
+
+.banner a {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+	border-radius: 14px;
+}
+
+/*body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: blanchedalmond;
+  }*/
+  
+.events h2{
+	margin-bottom: 2rem;
+	text-align: center;
+	text-decoration: dotted;
+}
+
+.events {
+    margin-top: 2rem;
+}
+
+.event-card { 
+	background-color: #bdd197ad;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.event-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    margin-bottom: 0.5rem;
+}
+
+.event-card a {
+    color: #121010;
+    display: inline-block;
+}
