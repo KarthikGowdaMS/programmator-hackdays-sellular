@@ -25,13 +25,13 @@ main {
     background-color: blanchedalmond;
   }*/
   
-.events h2{
+.main-events h2{
 	margin-bottom: 2rem;
 	text-align: center;
 	text-decoration: dotted;
 }
 
-.events {
+.main-events {
     margin-top: 2rem;
 }
 

@@ -5,30 +5,30 @@ class Main extends Component{
     render(){
         return(
             <main>
-		<section class="banner">
+		<section className="banner">
 			<h2>Welcome to the Hackathon Management System</h2>
 			<p>Streamline the organization and execution of your hackathons with our user-friendly system.</p>
-			<a href="/"><button class="btn btn-dark">Learn More</button></a>
+			<a href="/"><button className="btn btn-dark">Learn More</button></a>
 		</section>
-		<section class="events" id="events">
+		<section className="main-events" >
 			<h2>Upcoming Events</h2>
-			<div class="event-card">
+			<div className="event-card">
 				<h3>Hackathon Name</h3>
 				<p>Date: MM/DD/YYYY</p>
 				<p>Location: City, State</p>
-				<a href="/"><button class="btn btn-outline-dark">Register Now</button></a>
+				<a href="/"><button className="btn btn-outline-dark">Register Now</button></a>
 			</div>
-			<div class="event-card">
+			<div className="event-card">
 				<h3>Hackathon Name</h3>
 				<p>Date: MM/DD/YYYY</p>
 				<p>Location: City, State</p>
-				<a href="/"><button class="btn btn-outline-dark">Register Now</button></a>
+				<a href="/"><button className="btn btn-outline-dark">Register Now</button></a>
 			</div>
-			<div class="event-card">
+			<div className="event-card">
 				<h3>Hackathon Name</h3>
 				<p>Date: MM/DD/YYYY</p>
 				<p>Location: City, State</p>
-				<a href="/"><button class="btn btn-outline-dark">Register Now</button></a>
+				<a href="/"><button className="btn btn-outline-dark">Register Now</button></a>
 			</div>
 		</section>
 	</main>
