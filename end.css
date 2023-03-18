@@ -133,7 +133,23 @@ nav ul li a {
 }
 
 .carousel-item{
+}
+
+/* Press */
+#press{
+    background-color: #243763;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-heading{
     padding: 7% 15%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
 }
 
 /* Contact Section */
