@@ -1,0 +1,41 @@
+.login{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3F72AF;
+    color: #DBE2EF;
+    height: 100vh;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.submit{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+
+}
+
+.sign-up{
+    background-color: #F9F7F7;
+    color: #112D4E;
+}
+
+.log-in{
+    background-color: #112D4E;
+    color: #F9F7F7;
+}
