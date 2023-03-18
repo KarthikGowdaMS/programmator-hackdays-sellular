@@ -55,9 +55,7 @@ class Login extends Component {
                         <div className="col-lg-2"></div>
                     </div>
                 </section>
-                <div>
-                        <scriptTag src='./logins.js' type='text/javascript'/>
-                </div>
+<script src='./logins.js'></script>
             </div>
         );
     }
