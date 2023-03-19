@@ -1,23 +1,31 @@
 import socket
 
-HOST = '127.0.0.1' # replace with the IP address of the chatroom server
-PORT = 5000 # replace with the port number that the chatroom is listening on
+HOST = '3.6.98.232' # replace with the server's IP address
+PORT = 13840 # replace with the port number to connect to
+FILENAME = 'index.html' # replace with the name of the file you want to send
 
-file_path = 'D:/ptest/chatroom.html'
+# check if the file name is valid
+if any(c in FILENAME for c in '/\\:'):
+    print(f'Error: invalid file name {FILENAME}')
+    exit()
+
+# check if the file name is too long
+if len(FILENAME) > 255:
+    print(f'Error: file name is too long {FILENAME}')
+    exit()
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
 
-    # send the filename first
-    filename = file_path.split('/')[-1]
-    s.sendall(filename.encode())
-    print(filename)
-    # send the file data
-    with open(file_path, 'rb') as f:
+    # send the filename
+    
+    s.sendall(FILENAME.encode())
+
+    # send the file contents
+    with open(FILENAME, 'rb') as f:
         data = f.read(1024)
-        
         while data:
             s.sendall(data)
             data = f.read(1024)
 
-print('File sent successfully')
+    print('File sent successfully')
