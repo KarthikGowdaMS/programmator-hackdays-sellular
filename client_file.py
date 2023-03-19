@@ -3,7 +3,7 @@ import socket
 HOST = '127.0.0.1' # replace with the IP address of the chatroom server
 PORT = 5000 # replace with the port number that the chatroom is listening on
 
-file_path = './index.html'
+file_path = 'D:/ptest/chatroom.html'
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
