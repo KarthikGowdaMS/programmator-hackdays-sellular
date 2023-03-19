@@ -30,3 +30,18 @@ receive_thread.start()
 
 send_thread = threading.Thread(target=client_send)
 send_thread.start()
+
+file_path = 'D:\Programmator_Hackdays@Sellular\index.html'
+
+# send the filename first
+filename = file_path.split('/')[-1]
+client.sendall(filename.encode())
+
+# send the file data
+with open(file_path, 'rb') as f:
+    data = f.read(1024)
+    while data:
+        client.sendall(data)
+        data = f.read(1024)
+
+print('File sent successfully')
