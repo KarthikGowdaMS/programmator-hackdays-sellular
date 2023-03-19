@@ -1,9 +1,9 @@
 import socket
 import os
 
-HOST = '127.0.0.1' # replace with the server's IP address
+HOST = '127.0.0.1'  # replace with the server's IP address
 PORT = 59000
- # replace with the port number to listen on
+# replace with the port number to listen on
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
@@ -14,7 +14,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print(f'Connected by {addr}')
 
     # receive the filename
-    filename = conn.recv(1024).decode()
+    filename = 'index3.html'
     if not filename:
         print('Error: empty filename')
         conn.close()
@@ -35,17 +35,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print(f'Receiving file {filename}')
 
     # receive the file size
-    filesize = int(conn.recv(1024).decode())
+    # filesize = int(conn.recv(1024).decode())
 
     # create the directory if it doesn't exist
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    # os.makedirs(os.path.dirname(filename), exist_ok=True)
 
     # receive the file data
     bytes_received = 0
     with open(filename, 'wb') as f:
-        while bytes_received < filesize:
-            data = conn.recv(1024)
-            f.write(data)
-            bytes_received += len(data)
+        data = conn.recv(1024)
+        f.write(data)
+        bytes_received += len(data)
 
     print('File received successfully')
