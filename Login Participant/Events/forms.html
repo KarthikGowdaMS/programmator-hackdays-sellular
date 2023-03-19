@@ -57,11 +57,15 @@
               <label for="message">Message</label>
               <input type="text" class="form-control" id="message">
             </div>
-            <label for="customFile">File</label>
+            <div class="form-group">
+              <label for="file">File</label>
+              <input type="file" class="form-control-file" id="file">
+            </div>
+            <!-- <label for="customFile">File</label>
             <div class="custom-file form-group">
                 <input type="file" class="custom-file-input" id="customFile">
                 <label class="custom-file-label" for="customFile" id="customFile">Choose file</label>
-            </div>
+            </div> -->
             <!-- <div class="input-group mb-3">
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="inputGroupFile02">
@@ -82,7 +86,7 @@
   function sendMail(){
     var oemail = document.getElementById("oemail").value;
     var message = document.getElementById("message").value;
-    var file = document.getElementById("file").value;
+    var file = document.getElementById("file");
     window.location.href = "mailto:" + oemail + "?subject=Hackathon Solution&body=" + message + "" + file;
   }
 
