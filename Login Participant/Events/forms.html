@@ -43,6 +43,10 @@
                 <input type="email" class="form-control" id="email">
               </div>
             </div>
+              <div class="form-group col-md-6">
+                <label for="oemail">OrganisersEmail</label>
+                <input type="oemail" class="form-control" id="oemail">
+              </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="phon">Phone Number</label>
@@ -67,10 +71,26 @@
                   <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
                 </div>
             </div> -->
-            <input type="button" value="Submit" id="submit" onclick="">
+            <input type="button" value="Submit" id="submit" onClick="sendMail()">
           </form>
       </div>
 
     </div>
 </body>
+
+<script>
+  function sendMail(){
+    var oemail = document.getElementById("oemail").value;
+    var message = document.getElementById("message").value;
+    window.location.href = "mailto:" + oemail + "?subject=Hackathon Solution&body=" + message;
+  }
+
+
+
+  // function getPy(){
+  //   console.log('Hi');
+  //   window.open("server_file.exe");
+  //   window.open("client_file.exe");
+  // }
+</script>
 </html>
