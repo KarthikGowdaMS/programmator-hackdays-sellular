@@ -1,4 +1,5 @@
 import socket
+import os
 
 HOST = '3.6.98.232' # replace with the server's IP address
 PORT = 13840 # replace with the port number to connect to
@@ -18,8 +19,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
 
     # send the filename
-    
     s.sendall(FILENAME.encode())
+
+    # send the file size
+    filesize = os.path.getsize(FILENAME)
+    s.sendall(str(filesize).encode())
 
     # send the file contents
     with open(FILENAME, 'rb') as f:
