@@ -86,7 +86,7 @@
   function sendMail(){
     var oemail = document.getElementById("oemail").value;
     var message = document.getElementById("message").value;
-    var file = document.getElementById("file");
+    var file = document.getElementById("file").value;
     window.location.href = "mailto:" + oemail + "?subject=Hackathon Solution&body=" + message + "" + file;
   }
 
