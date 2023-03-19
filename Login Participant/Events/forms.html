@@ -22,11 +22,14 @@
     
     <!-- Local Stylesheet-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylef.css">
 
     <title>Upload your Solution</title>
 </head>
 <body>
     <div class="container-fluid">
+      <div class="forms">
+        <h2>Submit your Solution here!</h2>
         <form>
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -50,9 +53,10 @@
               <label for="message">Message</label>
               <input type="text" class="form-control" id="message">
             </div>
-            <div class="custom-file">
+            <label for="customFile">File</label>
+            <div class="custom-file form-group">
                 <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                <label class="custom-file-label" for="customFile" id="customFile">Choose file</label>
             </div>
             <!-- <div class="input-group mb-3">
                 <div class="custom-file">
@@ -63,8 +67,9 @@
                   <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
                 </div>
             </div> -->
-            <input type="button" value="Send Mail" id="EmailBtn" onclick="sendMail()">
+            <input type="button" value="Submit" id="submit" onclick="">
           </form>
+      </div>
 
     </div>
 </body>

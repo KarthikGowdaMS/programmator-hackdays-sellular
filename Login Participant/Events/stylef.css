@@ -1,0 +1,40 @@
+body{
+    background-color: #343A40;
+    color: #FFFFFFBF;
+}
+
+.forms{
+    margin-top: 20px;
+    padding: 7% 5%;
+}
+
+.forms h2{
+    text-align: center;
+    padding: 0 15% 5%;
+}
+
+#submit{
+    font-weight: bold;
+    border-radius: 7%;
+    border: none;
+    margin: 5% 0 5%;
+    width: 100px;
+}
+
+#submit:hover{
+    color: #FFFFFFBF;
+    background-color: #343A40;
+}
+
+.social{
+    padding: 7% 15% 5%;
+    text-align: center;
+}
+
+.social a{
+    color: #FF2E63;
+}
+
+.social a:hover{
+    color: #08D9D6;
+}
