@@ -1,8 +1,9 @@
 import socket
 import os
 
-HOST = '3.6.98.232' # replace with the server's IP address
-PORT = 13840 # replace with the port number to listen on
+HOST = '127.0.0.1' # replace with the server's IP address
+PORT = 59000
+ # replace with the port number to listen on
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
