@@ -87,12 +87,7 @@ class Contact extends Component {
 				</div>
 			  </div>
 	  
-			  <div class="social">
-				<a href="https://www.instagram.com/navaneethjains.l/"><i class="fa fa-2x fa-brands fa-instagram" aria-hidden="true"></i></a>
-				<a href="https://twitter.com/navaneethjainsl"><i class="fa fa-2x fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-				<a href="https://www.youtube.com"><i class="fa fa-2x fa-brands fa-youtube" aria-hidden="true"></i></a>
-				<a href="https://github.com/navaneethjainsl"><i class="fa fa-2x fa-brands fa-github large" aria-hidden="true"></i></a>
-			  </div>
+			  
 			</div>
 		  </section>
 
